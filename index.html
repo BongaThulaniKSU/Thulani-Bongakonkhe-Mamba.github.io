@@ -1,293 +1,600 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP | html5up.net | @ajlkn
-	Customized for Thulane Bongakonkhe Mamba
-	Project files hosted on Google Drive (direct download links)
-	Font: Times New Roman | Projects: bullet points, no upload form
--->
-<html>
-	<head>
-		<title>Thulane Mamba | Mechanical Engineer Graduate & Jr QS</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba – Mechanical Engineering graduate (soon), Technical Quantity Surveyor, with robotics and cost engineering projects." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Force Times New Roman on all text elements */
-			body, input, select, textarea, button, .content .inner p, h1, h2, h3, h4, h5, h6, 
-			.major, nav a, .copyright, .inner p, .inner h1, .inner span, .icons a, 
-			.button, .actions li, form label, form input, form textarea,
-			#header .logo, #footer .copyright, .article h2, .article p, .article ul, .article li {
-				font-family: 'Times New Roman', Times, serif !important;
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Thulane Mamba | Mechanical Engineer Graduate & Jr QS</title>
+    <meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba – Mechanical Engineering graduate (soon), Technical Quantity Surveyor, robotics and cost engineering projects.">
+    <!-- Font Awesome 6 (free icons, CDN but won't break if offline) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-			/* Projects grid and cards */
-			.projects-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-				gap: 2rem;
-				margin-top: 2rem;
-			}
-			.project-card {
-				background: rgba(255,255,255,0.05);
-				border-radius: 12px;
-				padding: 1.2rem;
-				transition: transform 0.25s ease, box-shadow 0.25s;
-				border: 1px solid rgba(255,255,255,0.1);
-				backdrop-filter: blur(2px);
-			}
-			.project-card:hover {
-				transform: translateY(-6px);
-				background: rgba(255,255,255,0.1);
-				box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-				border-color: rgba(255,255,255,0.3);
-			}
-			.project-card img {
-				width: 100%;
-				height: 180px;
-				object-fit: cover;
-				border-radius: 8px;
-				margin-bottom: 0.8rem;
-			}
-			.project-card h4 {
-				margin: 0.5rem 0 0.75rem;
-				font-size: 1.3rem;
-				border-left: 4px solid #fff;
-				padding-left: 10px;
-			}
-			.project-card .bullet-list {
-				margin: 0.75rem 0 0.5rem 1.2rem;
-				padding-left: 0;
-				list-style-type: none;
-			}
-			.project-card .bullet-list li {
-				margin-bottom: 0.5rem;
-				font-size: 0.9rem;
-				position: relative;
-				padding-left: 1.2rem;
-			}
-			.project-card .bullet-list li:before {
-				content: "▹";
-				position: absolute;
-				left: 0;
-				color: #ffcc66;
-			}
-			.file-link {
-				display: inline-flex;
-				align-items: center;
-				gap: 0.4rem;
-				margin-top: 0.8rem;
-				font-size: 0.85rem;
-				background: rgba(255,255,255,0.15);
-				padding: 0.3rem 1rem;
-				border-radius: 30px;
-				text-decoration: none;
-				transition: background 0.2s;
-			}
-			.file-link:hover {
-				background: rgba(255,255,255,0.3);
-				text-decoration: none;
-			}
-			.project-tags {
-				margin-top: 0.8rem;
-				display: flex;
-				flex-wrap: wrap;
-				gap: 0.5rem;
-			}
-			.tag {
-				font-size: 0.7rem;
-				background: #2c3e66;
-				padding: 0.2rem 0.6rem;
-				border-radius: 20px;
-				letter-spacing: 0.5px;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<!-- Header -->
-			<header id="header">
-				<div class="logo">
-					<img src="images/My Picture.jpg" alt="Thulane Mamba profile" 
-						style="width:100%; height:100%; border-radius:50%; object-fit:cover;" />
-				</div>
-				<div class="content">
-					<div class="inner">
-						<h1>Thulane Bongakonkhe Mamba</h1>
-						<p>Mechanical Engineer Graduate (soon) | Junior Quantity Surveyor<br />
-						<span style="font-size:0.85rem;">Robotics · Automation · Cost‑integrated Engineering</span></p>
-					</div>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #1e1e2f;
+            color: #f0f0f0;
+            line-height: 1.5;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
 
-			<!-- Main Content -->
-			<div id="main">
-				<!-- Intro -->
-				<article id="intro">
-					<h2 class="major">Intro</h2>
-					<span class="image main"><img src="images/pic01.jpg" alt="Engineering design" /></span>
-					<p>I'm Thulane – a final‑year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
-					<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or engineering consultancy. Below you'll find my featured projects – each with bullet points highlighting key innovations and results. Click the download links to access full reports (PDF).</p>
-				</article>
+        body.is-preload {
+            opacity: 0;
+        }
 
-				<!-- Work Experience -->
-				<article id="work">
-					<h2 class="major">Work Experience</h2>
-					<span class="image main"><img src="images/pic02.jpg" alt="Professional experience" /></span>
-					<h3>🏗️ Project Coordinator & Site Supervisor</h3>
-					<p><strong>Eswatini | 2019–2022</strong><br />
-					• Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC).<br />
-					• Implemented cost control measures – reduced operational expenses by 12% across two residential projects.<br />
-					• Supervised on‑site operations, resource management, and quality assurance protocols.</p>
-					<h3>🔧 Technical Assistant & Engineering Support</h3>
-					<p><strong>Taiwan | 2023–Present</strong><br />
-					• Provided manufacturing support in a factory environment: PLC debugging, HMI configuration.<br />
-					• Assisted in mechatronic assembly and sensor integration for automation lines.<br />
-					• Supervised academic residential logistics while applying engineering principles.</p>
-				</article>
+        /* animated background (smooth gradient) */
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 10%, #2a2a3b, #0a0a12);
+            z-index: -2;
+        }
 
-				<!-- Projects Gallery – only project cards, no upload form -->
-				<article id="projects">
-					<h2 class="major">✨ Featured Projects</h2>
-					<p>Each project includes bullet‑point highlights and a downloadable PDF (full report, CAD drawings, or code documentation).</p>
-					
-					<div class="projects-grid">
-						<!-- Project 1: Baseball Pitching Robot – ACTIVE GOOGLE DRIVE LINK (your file) -->
-						<div class="project-card">
-							<img src="images/pic_robot.jpg" alt="Baseball pitching robot" onerror="this.src='images/pic02.jpg'">
-							<h4>⚾ Vision‑Based Baseball Pitching Robot</h4>
-							<ul class="bullet-list">
-								<li><strong>Role:</strong> Lead mechanical & control integration (team of 3)</li>
-								<li><strong>Tech:</strong> YOLOv8, Jetson Orin Nano, Kiwi holonomic drive, dual BLDC shooter (10,000 RPM)</li>
-								<li><strong>Result:</strong> 86.4% hit rate across 3×3 strike zone (92.1% center zone)</li>
-								<li><strong>Key achievement:</strong> Real‑time drag & Magnus effect compensation → 2.1cm avg alignment error</li>
-								<li><strong>Impact:</strong> Autonomous target acquisition → launch in 0.82s</li>
-							</ul>
-							<div class="project-tags"><span class="tag">#ComputerVision</span><span class="tag">#Robotics</span><span class="tag">#ControlSystems</span></div>
-							<!-- ✅ Direct Google Drive download link (active) -->
-							<a href="https://drive.google.com/uc?export=download&id=1IlDXdbCTledU6YE7TDPGCaD8fAZ8ELwW" class="file-link" target="_blank">📄 Download full report (PDF)</a>
-						</div>
+        #bg:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 8px);
+            pointer-events: none;
+        }
 
-						<!-- Project 2: Combat Robot – placeholder: replace # with your Google Drive direct link after uploading PDF -->
-						<div class="project-card">
-							<img src="images/pic_combat.jpg" alt="Combat robot" onerror="this.src='images/pic03.jpg'">
-							<h4>🤖 Combat Robot – 15kg Class</h4>
-							<ul class="bullet-list">
-								<li><strong>Role:</strong> Mechanical designer & driver</li>
-								<li><strong>Design:</strong> Fusion 360, impact‑resistant polycarbonate + aluminium chassis</li>
-								<li><strong>Drivetrain:</strong> 4WD with high‑torque DC motors, Arduino-based PWM control</li>
-								<li><strong>Outcome:</strong> Reached semi‑finals in inter‑university robotics competition</li>
-								<li><strong>Lessons:</strong> Rapid prototyping, weight optimisation, failsafe strategies</li>
-							</ul>
-							<div class="project-tags"><span class="tag">#CombatRobotics</span><span class="tag">#CAD</span><span class="tag">#Arduino</span></div>
-							<!-- Replace href="#" with your direct Google Drive download link -->
-							<a href="#" class="file-link">📐 CAD drawings & report (PDF)</a>
-						</div>
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-						<!-- Project 3: Autonomous Vehicle – placeholder -->
-						<div class="project-card">
-							<img src="images/pic_autonomous.jpg" alt="Autonomous vehicle" onerror="this.src='images/pic01.jpg'">
-							<h4>🚗 Autonomous Navigation Vehicle</h4>
-							<ul class="bullet-list">
-								<li><strong>Sensors:</strong> Ultrasonic, IR, encoders, MPU6050 IMU</li>
-								<li><strong>Algorithms:</strong> PID speed control, obstacle avoidance, sensor fusion</li>
-								<li><strong>Platform:</strong> Arduino Mega + ROS (basic implementation)</li>
-								<li><strong>Performance:</strong> Successfully navigated a 10m maze with dynamic obstacles</li>
-								<li><strong>Contribution:</strong> Programmed low‑level motor drivers and tuned PID loops</li>
-							</ul>
-							<div class="project-tags"><span class="tag">#ROS</span><span class="tag">#SensorFusion</span><span class="tag">#PID</span></div>
-							<!-- Replace href="#" with your direct Google Drive download link -->
-							<a href="#" class="file-link">📁 Firmware & simulation report (PDF)</a>
-						</div>
+        /* header / logo area */
+        #header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
 
-						<!-- Project 4: Robotic Arm – placeholder -->
-						<div class="project-card">
-							<img src="images/pic_arm.jpg" alt="Robotic arm" onerror="this.src='images/pic02.jpg'">
-							<h4>🦾 4‑DOF Robotic Arm – Kinematic Analysis</h4>
-							<ul class="bullet-list">
-								<li><strong>Analysis:</strong> Forward/inverse kinematics solved via MATLAB & Denavit‑Hartenberg</li>
-								<li><strong>Fabrication:</strong> 3D‑printed links + servo actuators (SG90 & MG995)</li>
-								<li><strong>Control:</strong> Python GUI for joint angle control and trajectory planning</li>
-								<li><strong>Result:</strong> Achieved 2mm repeatability at 30cm reach</li>
-								<li><strong>Documentation:</strong> Full kinematic report and code repository</li>
-							</ul>
-							<div class="project-tags"><span class="tag">#Kinematics</span><span class="tag">#MATLAB</span><span class="tag">#3DPrinting</span></div>
-							<!-- Replace href="#" with your direct Google Drive download link -->
-							<a href="#" class="file-link">📘 Kinematic report & files (PDF)</a>
-						</div>
-					</div>
-					<p style="margin-top: 2rem; font-size: 0.85rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
-					⭐ More project details, source code, and additional reports available upon request. All PDFs are downloadable via the links above.
-					</p>
-				</article>
+        .logo {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 1.2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.3);
+            background: #2c2c3a;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
 
-				<!-- About -->
-				<article id="about">
-					<h2 class="major">About</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="Engineering sketches" /></span>
-					<h3>🎓 Education (Graduating Soon)</h3>
-					<p><strong>Kun Shan University of Technology, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–Present)<br />
-					<em>Specialization: Robotics, Automation, Control Systems</em><br />
-					<strong>Institute of Commercial Management (ICM), UK</strong> – Advanced Diploma in Project Management (2021)<br />
-					<strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
-					<h3>🔧 Technical Skills Snapshot</h3>
-					<p>▪ Programming: Python, C++, Arduino, MATLAB, PLC Ladder Logic<br />
-					▪ Design & Simulation: AutoCAD, Fusion 360, Revit, COMSOL, FlexSim<br />
-					▪ QS & Management: WinQS, MS Project, Primavera, Cost Estimation, NEC/JBCC<br />
-					▪ Automation: Sensors/Actuators, Servo motors, HMI, Industrial IoT basics</p>
-					<h3>🌟 Beyond Engineering</h3>
-					<p>I'm passionate about mentoring emerging black professionals in the built environment and volunteering with <strong>Engineers Without Borders SA</strong>. In my downtime, I enjoy chess, cycling, and studying sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry.</p>
-				</article>
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-				<!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half"><label for="name">Name</label><input type="text" name="name" id="name" /></div>
-							<div class="field half"><label for="email">Email</label><input type="text" name="email" id="email" /></div>
-							<div class="field"><label for="message">Message</label><textarea name="message" id="message" rows="4"></textarea></div>
-						</div>
-						<ul class="actions"><li><input type="submit" value="Send Message" class="primary" /></li><li><input type="reset" value="Reset" /></li></ul>
-					</form>
-					<div style="text-align: center; margin: 1.5rem 0;">
-						<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br />
-						<span>📍 Taiwan (open to relocation) · Nationality: Eswatini</span></p>
-					</div>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</article>
+        .content .inner h1 {
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
 
-				<!-- Hidden element (template requirement) -->
-				<article id="elements"><h2 class="major">Elements</h2>...</article>
-			</div>
+        .content .inner p {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
 
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
-		</div>
+        /* navigation */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            list-style: none;
+            margin-top: 2rem;
+        }
 
-		<div id="bg"></div>
+        nav ul li a {
+            display: inline-block;
+            padding: 0.7rem 1.6rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 40px;
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            font-size: 1rem;
+        }
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+        nav ul li a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* main article panels */
+        #main {
+            flex: 1;
+            margin: 2rem 0;
+        }
+
+        article {
+            background: rgba(20, 20, 32, 0.75);
+            backdrop-filter: blur(12px);
+            border-radius: 28px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: 0.2s;
+            display: none;
+        }
+
+        article.active {
+            display: block;
+            animation: fadeIn 0.35s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .major {
+            font-size: 2rem;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .image.main {
+            display: block;
+            margin: 1.2rem 0;
+            border-radius: 20px;
+            overflow: hidden;
+            max-height: 320px;
+        }
+
+        .image.main img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        /* projects grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            padding: 1.2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            background: rgba(0,0,0,0.7);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 0.8rem;
+            background: #2a2a3a;
+        }
+
+        .project-card h4 {
+            font-size: 1.3rem;
+            margin: 0.5rem 0;
+            border-left: 4px solid #ffcc66;
+            padding-left: 12px;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 0.8rem 0;
+        }
+
+        .bullet-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: 0.9rem;
+        }
+
+        .bullet-list li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #ffcc66;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0.8rem 0;
+        }
+
+        .tag {
+            background: #2c3e66;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .file-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.12);
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 0.8rem;
+            margin-top: 0.6rem;
+            transition: 0.2s;
+        }
+
+        .file-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* contact form */
+        .fields {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .field {
+            width: 100%;
+        }
+
+        .field.half {
+            width: calc(50% - 0.5rem);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 12px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 0.6rem 1.8rem;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .icons a {
+            color: #eee;
+            font-size: 1.6rem;
+            transition: 0.2s;
+        }
+
+        .icons a:hover {
+            color: #ffcc66;
+            transform: scale(1.1);
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 680px) {
+            .field.half {
+                width: 100%;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+            .content .inner h1 {
+                font-size: 2rem;
+            }
+            article {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+<div id="bg"></div>
+<div id="wrapper">
+    <header id="header">
+        <div class="logo">
+            <!-- Profile image: if missing, a placeholder initial will show -->
+            <img src="images/My Picture.jpg" alt="Thulane Mamba profile" onerror="this.src='https://ui-avatars.com/api/?background=2c3e66&color=fff&name=TM&size=128';">
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>Thulane Bongakonkhe Mamba</h1>
+                <p>Mechanical Engineer Graduate (soon) | Junior Quantity Surveyor<br>
+                <span style="font-size:0.85rem;">Robotics · Automation · Cost‑integrated Engineering</span></p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro" data-article="intro">Intro</a></li>
+                <li><a href="#work" data-article="work">Work</a></li>
+                <li><a href="#projects" data-article="projects">Projects</a></li>
+                <li><a href="#about" data-article="about">About</a></li>
+                <li><a href="#contact" data-article="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main">
+        <!-- Intro -->
+        <article id="intro" class="active">
+            <h2 class="major">Intro</h2>
+            <span class="image main"><img src="https://picsum.photos/id/0/900/350" alt="Engineering design"></span>
+            <p>I'm Thulane – a final‑year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
+            <p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or engineering consultancy. Below you'll find my featured projects – each with bullet points highlighting key innovations and results. Click the download links to access full reports (PDF).</p>
+        </article>
+
+        <!-- Work Experience -->
+        <article id="work">
+            <h2 class="major">Work Experience</h2>
+            <span class="image main"><img src="https://picsum.photos/id/20/900/350" alt="Professional experience"></span>
+            <h3>🏗️ Project Coordinator & Site Supervisor</h3>
+            <p><strong>Eswatini | 2019–2022</strong><br>
+            • Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC).<br>
+            • Implemented cost control measures – reduced operational expenses by 12% across two residential projects.<br>
+            • Supervised on‑site operations, resource management, and quality assurance protocols.</p>
+            <h3>🔧 Technical Assistant & Engineering Support</h3>
+            <p><strong>Taiwan | 2023–Present</strong><br>
+            • Provided manufacturing support in a factory environment: PLC debugging, HMI configuration.<br>
+            • Assisted in mechatronic assembly and sensor integration for automation lines.<br>
+            • Supervised academic residential logistics while applying engineering principles.</p>
+        </article>
+
+        <!-- Projects Gallery (no upload form, only projects) -->
+        <article id="projects">
+            <h2 class="major">✨ Featured Projects</h2>
+            <p>Each project includes bullet‑point highlights and a downloadable PDF (full report, CAD drawings, or code documentation).</p>
+            <div class="projects-grid">
+                <!-- Baseball Robot - active Google Drive link -->
+                <div class="project-card">
+                    <img src="https://picsum.photos/id/101/400/200" alt="Baseball pitching robot">
+                    <h4>⚾ Vision‑Based Baseball Pitching Robot</h4>
+                    <ul class="bullet-list">
+                        <li><strong>Role:</strong> Lead mechanical & control integration (team of 3)</li>
+                        <li><strong>Tech:</strong> YOLOv8, Jetson Orin Nano, Kiwi holonomic drive, dual BLDC shooter (10,000 RPM)</li>
+                        <li><strong>Result:</strong> 86.4% hit rate across 3×3 strike zone (92.1% center zone)</li>
+                        <li><strong>Key achievement:</strong> Real‑time drag & Magnus effect compensation → 2.1cm avg alignment error</li>
+                        <li><strong>Impact:</strong> Autonomous target acquisition → launch in 0.82s</li>
+                    </ul>
+                    <div class="project-tags"><span class="tag">#ComputerVision</span><span class="tag">#Robotics</span><span class="tag">#ControlSystems</span></div>
+                    <a href="https://drive.google.com/uc?export=download&id=1IlDXdbCTledU6YE7TDPGCaD8fAZ8ELwW" class="file-link" target="_blank">📄 Download full report (PDF)</a>
+                </div>
+                <!-- Combat Robot -->
+                <div class="project-card">
+                    <img src="https://picsum.photos/id/58/400/200" alt="Combat robot">
+                    <h4>🤖 Combat Robot – 15kg Class</h4>
+                    <ul class="bullet-list">
+                        <li><strong>Role:</strong> Mechanical designer & driver</li>
+                        <li><strong>Design:</strong> Fusion 360, impact‑resistant polycarbonate + aluminium chassis</li>
+                        <li><strong>Drivetrain:</strong> 4WD with high‑torque DC motors, Arduino-based PWM control</li>
+                        <li><strong>Outcome:</strong> Reached semi‑finals in inter‑university robotics competition</li>
+                        <li><strong>Lessons:</strong> Rapid prototyping, weight optimisation, failsafe strategies</li>
+                    </ul>
+                    <div class="project-tags"><span class="tag">#CombatRobotics</span><span class="tag">#CAD</span><span class="tag">#Arduino</span></div>
+                    <a href="#" class="file-link">📐 CAD drawings & report (PDF) – contact for access</a>
+                </div>
+                <!-- Autonomous Vehicle -->
+                <div class="project-card">
+                    <img src="https://picsum.photos/id/107/400/200" alt="Autonomous vehicle">
+                    <h4>🚗 Autonomous Navigation Vehicle</h4>
+                    <ul class="bullet-list">
+                        <li><strong>Sensors:</strong> Ultrasonic, IR, encoders, MPU6050 IMU</li>
+                        <li><strong>Algorithms:</strong> PID speed control, obstacle avoidance, sensor fusion</li>
+                        <li><strong>Platform:</strong> Arduino Mega + ROS (basic implementation)</li>
+                        <li><strong>Performance:</strong> Successfully navigated a 10m maze with dynamic obstacles</li>
+                        <li><strong>Contribution:</strong> Programmed low‑level motor drivers and tuned PID loops</li>
+                    </ul>
+                    <div class="project-tags"><span class="tag">#ROS</span><span class="tag">#SensorFusion</span><span class="tag">#PID</span></div>
+                    <a href="#" class="file-link">📁 Firmware & simulation report (PDF) – share on request</a>
+                </div>
+                <!-- Robotic Arm -->
+                <div class="project-card">
+                    <img src="https://picsum.photos/id/63/400/200" alt="Robotic arm">
+                    <h4>🦾 4‑DOF Robotic Arm – Kinematic Analysis</h4>
+                    <ul class="bullet-list">
+                        <li><strong>Analysis:</strong> Forward/inverse kinematics solved via MATLAB & Denavit-Hartenberg</li>
+                        <li><strong>Fabrication:</strong> 3D‑printed links + servo actuators (SG90 & MG995)</li>
+                        <li><strong>Control:</strong> Python GUI for joint angle control and trajectory planning</li>
+                        <li><strong>Result:</strong> Achieved 2mm repeatability at 30cm reach</li>
+                        <li><strong>Documentation:</strong> Full kinematic report and code repository</li>
+                    </ul>
+                    <div class="project-tags"><span class="tag">#Kinematics</span><span class="tag">#MATLAB</span><span class="tag">#3DPrinting</span></div>
+                    <a href="#" class="file-link">📘 Kinematic report & files (PDF) – available via email</a>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.85rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">⭐ More project details, source code, and additional reports available upon request. All PDFs are downloadable via the links above (active for baseball robot).</p>
+        </article>
+
+        <!-- About -->
+        <article id="about">
+            <h2 class="major">About</h2>
+            <span class="image main"><img src="https://picsum.photos/id/26/900/350" alt="Engineering sketches"></span>
+            <h3>🎓 Education (Graduating Soon)</h3>
+            <p><strong>Kun Shan University of Technology, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–Present)<br>
+            <em>Specialization: Robotics, Automation, Control Systems</em><br>
+            <strong>Institute of Commercial Management (ICM), UK</strong> – Advanced Diploma in Project Management (2021)<br>
+            <strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
+            <h3>🔧 Technical Skills Snapshot</h3>
+            <p>▪ Programming: Python, C++, Arduino, MATLAB, PLC Ladder Logic<br>
+            ▪ Design & Simulation: AutoCAD, Fusion 360, Revit, COMSOL, FlexSim<br>
+            ▪ QS & Management: WinQS, MS Project, Primavera, Cost Estimation, NEC/JBCC<br>
+            ▪ Automation: Sensors/Actuators, Servo motors, HMI, Industrial IoT basics</p>
+            <h3>🌟 Beyond Engineering</h3>
+            <p>I'm passionate about mentoring emerging black professionals in the built environment and volunteering with <strong>Engineers Without Borders SA</strong>. In my downtime, I enjoy chess, cycling, and studying sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry.</p>
+        </article>
+
+        <!-- Contact -->
+        <article id="contact">
+            <h2 class="major">Contact</h2>
+            <form method="post" action="#" onsubmit="alert('Demo: message would be sent. For real inquiries, please email nhlanse@gmail.com directly.'); return false;">
+                <div class="fields">
+                    <div class="field half"><label for="name">Name</label><input type="text" name="name" id="name" /></div>
+                    <div class="field half"><label for="email">Email</label><input type="text" name="email" id="email" /></div>
+                    <div class="field"><label for="message">Message</label><textarea name="message" id="message" rows="4"></textarea></div>
+                </div>
+                <ul class="actions"><li><input type="submit" value="Send Message" class="primary" /></li><li><input type="reset" value="Reset" /></li></ul>
+            </form>
+            <div style="text-align: center; margin: 1.5rem 0;">
+                <p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br>
+                <span>📍 Taiwan (open to relocation) · Nationality: Eswatini</span></p>
+            </div>
+            <ul class="icons">
+                <li><a href="#" class="fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:nhlanse@gmail.com" class="fas fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="#" class="fab fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </article>
+    </div>
+
+    <footer id="footer">
+        <p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design adapted from HTML5 UP Dimension.</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // Remove preload class to show content
+        window.addEventListener('load', function() {
+            document.body.classList.remove('is-preload');
+        });
+        // Fallback in case load already fired
+        if (document.readyState === 'complete') {
+            document.body.classList.remove('is-preload');
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                document.body.classList.remove('is-preload');
+            });
+        }
+
+        // Article switching logic
+        const articles = {
+            intro: document.getElementById('intro'),
+            work: document.getElementById('work'),
+            projects: document.getElementById('projects'),
+            about: document.getElementById('about'),
+            contact: document.getElementById('contact')
+        };
+
+        function showArticle(articleId) {
+            // Hide all
+            for (let key in articles) {
+                if (articles[key]) articles[key].classList.remove('active');
+            }
+            if (articles[articleId]) {
+                articles[articleId].classList.add('active');
+            } else {
+                // fallback to intro
+                articles.intro.classList.add('active');
+            }
+            // update URL hash without jumping
+            history.pushState(null, '', '#' + articleId);
+        }
+
+        // attach click listeners to navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-article');
+                if (targetId && articles[targetId]) {
+                    showArticle(targetId);
+                } else {
+                    // try to extract from href like #intro
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        const id = href.substring(1);
+                        if (articles[id]) showArticle(id);
+                    }
+                }
+            });
+        });
+
+        // handle initial hash if any
+        function handleHash() {
+            const hash = window.location.hash.substring(1);
+            if (hash && articles[hash]) {
+                showArticle(hash);
+            } else {
+                showArticle('intro');
+            }
+        }
+        window.addEventListener('hashchange', handleHash);
+        handleHash();
+    })();
+</script>
+</body>
 </html>
