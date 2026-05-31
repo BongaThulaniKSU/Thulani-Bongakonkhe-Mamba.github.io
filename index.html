@@ -3,406 +3,361 @@
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Customized for Thulane Bongakonkhe Mamba – Mechanical Engineering Graduate & Junior Quantity Surveyor
-	Integrating final-year project (baseball pitching robot) and professional experience.
+	Customized for Thulane Bongakonkhe Mamba – with dynamic project upload section
 -->
 <html>
 	<head>
-		<title>Thulane Mamba | Mechanical Engeener Graduate & Junior Quantity Surveyor</title>
+		<title>Thulane Mamba | Mechanical Engineering Graduate & Junior Quantity Surveyor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba Mechanical Engineering graduate, Technical Quantity Surveyor." />
+		<meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba – Mechanical Engineering graduate, Technical Quantity Surveyor." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Times New Roman override -->
+		<style>
+			body, input, select, textarea, button, .content .inner p, h1, h2, h3, h4, h5, h6, 
+			.major, nav a, .copyright, .inner p, .inner h1, .inner span, .icons a, 
+			.button, .actions li, form label, form input, form textarea, .image.caption,
+			#header .logo, #footer .copyright, .article h2, .article p, .article ul, .article li {
+				font-family: 'Times New Roman', Times, serif !important;
+			}
+			/* Project cards styling */
+			.projects-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.project-card {
+				background: rgba(255,255,255,0.05);
+				border-radius: 8px;
+				padding: 1rem;
+				transition: transform 0.2s;
+				border: 1px solid rgba(255,255,255,0.1);
+			}
+			.project-card:hover {
+				transform: translateY(-5px);
+				background: rgba(255,255,255,0.1);
+			}
+			.project-card img {
+				width: 100%;
+				height: 180px;
+				object-fit: cover;
+				border-radius: 6px;
+			}
+			.project-card h4 {
+				margin: 0.75rem 0 0.5rem;
+			}
+			.project-card p {
+				font-size: 0.9rem;
+				line-height: 1.4;
+			}
+			.project-card .file-link {
+				display: inline-block;
+				margin-top: 0.75rem;
+				font-size: 0.8rem;
+				background: #ffffff20;
+				padding: 0.3rem 0.8rem;
+				border-radius: 20px;
+				text-decoration: none;
+			}
+			.delete-btn {
+				background: #e74c3c;
+				border: none;
+				color: white;
+				padding: 0.3rem 0.8rem;
+				border-radius: 20px;
+				cursor: pointer;
+				font-size: 0.7rem;
+				margin-top: 0.5rem;
+				display: inline-block;
+			}
+			.upload-form {
+				background: rgba(0,0,0,0.3);
+				padding: 1.5rem;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+			}
+			.upload-form .field {
+				margin-bottom: 1rem;
+			}
+			.upload-form label {
+				display: block;
+				margin-bottom: 0.3rem;
+				font-weight: bold;
+			}
+			.upload-form input, .upload-form textarea {
+				width: 100%;
+				padding: 0.5rem;
+				background: rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.2);
+				color: #fff;
+				border-radius: 4px;
+			}
+			.upload-form input[type="file"] {
+				padding: 0.3rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<header id="header">
+				<div class="logo">
+					<img src="images/My Picture.jpg" alt="Thulane Mamba profile" 
+						style="width:100%; height:100%; border-radius:50%; object-fit:cover;" />
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Thulane Bongakonkhe Mamba</h1>
+						<p>Mechanical Engineer Graduate | Junior Quantity Surveyor<br />
+						<span style="font-size:0.85rem;">Robotics · Automation · Cost‑integrated Engineering</span></p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<!-- Profile image – replace "images/My Picture.jpg" with actual photo -->
-							<img src="images/My Picture.jpg" alt="Thulane Mamba profile" 
-								style="width:100%; height:100%; border-radius:50%; object-fit:cover;" />
+			<div id="main">
+				<!-- Intro -->
+				<article id="intro">
+					<h2 class="major">Intro</h2>
+					<span class="image main"><img src="images/pic01.jpg" alt="Engineering design and cost analysis" /></span>
+					<p>I'm Thulane a final‑year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
+					<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or HVAC engineering consultancy or construction. <a href="#work">Welcome to explore my key projects</a> or check the <a href="#projects">Projects section</a> where I upload my work files and images.</p>
+				</article>
+
+				<!-- Work -->
+				<article id="work">
+					<h2 class="major">Work</h2>
+					<span class="image main"><img src="images/pic02.jpg" alt="Baseball pitching robot" /></span>
+					<h3>🎯 Featured: Vision‑Based Baseball Pitching Robot</h3>
+					<p><strong>Final Year Project (2025) | Team lead</strong><br />
+					Developed a dual‑mode autonomous/manual holonomic pitching robot using YOLOv8 on Jetson Orin Nano. Achieved <strong>86.4% overall hit rate</strong>, 2.1cm alignment error, 0.82s response time.</p>
+					<h3>🤖 Additional Academic Projects</h3>
+					<p>Combat Robot, Autonomous Vehicle Platform, Robotic Arm Kinematic Analysis.</p>
+					<h3>🏗️ Professional Experience</h3>
+					<p>Project Coordinator (Eswatini, 2019‑2022), Technical Assistant (Taiwan, 2023‑Present).</p>
+				</article>
+
+				<!-- Projects: dynamic upload + gallery -->
+				<article id="projects">
+					<h2 class="major">Projects Gallery</h2>
+					<p>Upload your project files (images, PDFs, zips) with a short description. They will be saved in your browser and appear below.</p>
+					
+					<div class="upload-form">
+						<h3>Add New Project</h3>
+						<div class="field">
+							<label>Project Title</label>
+							<input type="text" id="projTitle" placeholder="e.g., Baseball Pitching Robot" />
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Thulane Bongakonkhe Mamba</h1>
-								<p>Mechanical Engineer Graduate | Junior Quantity Surveyor<br />
-								<span style="font-size:0.85rem;">Robotics · Automation · Cost‑integrated Engineering</span></p>
-							</div>
+						<div class="field">
+							<label>Description (little description)</label>
+							<textarea id="projDesc" rows="3" placeholder="Brief description of the project..."></textarea>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#project">Project</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro : professional summary and dual-discipline focus -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="Engineering design and cost analysis" /></span>
-								<p>I'm Thulanea final‑year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
-								<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or engineering consultancy where I can apply my interdisciplinary skills. I combine hands‑on experience from construction supervision (Eswatini) with advanced robotics training (Taiwan). Whether it's designing a mechatronic system or optimizing project lifecycles, I deliver value through analytical rigour and cost awareness. <a href="#work">Explore my key projects</a> to see my work in action.</p>
-							</article>
-
-						<!-- Work : featured final-year project + other academic & professional projects -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="Baseball pitching robot – dual wheel shooter and Kiwi drive" /></span>
-								
-								<h3>🎯 Featured: Vision‑Based Baseball Pitching Robot</h3>
-								<p><strong>Final Year Project (2025) | Team lead – Mechanical & Control Integration</strong><br>
-								Developed a dual‑mode (autonomous/manual) holonomic pitching robot that detects a 3×3 strike‑zone grid using YOLOv8 on a Jetson Orin Nano. The system integrates a Kiwi (tri‑Omni) drive for precise alignment, a dual‑wheel BLDC shooter (up to 10,000 RPM), and a physics‑based projectile model incorporating drag, lift, and Magnus effect. Achieved <strong>86.4% overall hit rate</strong> (92.1% for centre zones) across 2.5–7.5 m distances, with average alignment error of 2.1 cm and response time of 0.82 s. The robot successfully demonstrates closed‑loop perception‑to‑actuation in real time. <em>(Full report available on request)</em></p>
-								<ul>
-									<li>Implemented inverse kinematics for holonomic motion and trajectory computation.</li>
-									<li>Calibrated camera, wheel RPM-to-velocity mapping, and launch angle servo actuation.</li>
-									<li>Integrated fail‑safe logic and remote control (AT9S Pro) for manual override.</li>
-								</ul>
-								
-								<h3>🤖 Additional Academic Projects</h3>
-								<p><strong>Combat Robot Design & Control System</strong> – Designed a lightweight combat robot using Fusion 360, integrated high‑torque DC motors, an Arduino‑based control loop, and impact‑resistant chassis. Competed in inter‑university robotics event.<br>
-								<strong>Autonomous Vehicle Platform</strong> – Built a multi‑sensor autonomous cart (ultrasonic, IR, encoder) with PID speed control and obstacle avoidance. Processed sensor fusion on an Arduino Mega.<br>
-								<strong>Robotic Arm Kinematic Analysis</strong> – Performed forward/inverse kinematics for a 4‑DOF robotic arm; simulated trajectories in MATLAB and fabricated a functional prototype using servo actuators.</p>
-								
-								<h3>🏗️ Professional Experience</h3>
-								<p><strong>Project Coordinator & Site Supervisor (Eswatini, 2019‑2022)</strong> – Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC). Implemented cost control measures that reduced operational expenses by 12% across two residential projects.<br>
-								<strong>Technical Assistant & Engineering Support (Taiwan, 2023‑Present)</strong> – Provided manufacturing support in a local factory environment, assisted with PLC debugging and HMI configuration, and supervised academic residential logistics.</p>
-							</article>
-
-						<!-- About : education, skills, languages, personal mission (soon-to-graduate + mentoring) -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="Engineering sketches and QS takeoff sheet" /></span>
-								
-								<h3>🎓 Education (Graduating Soon)</h3>
-								<p><strong>Kun Shan University of Technology, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–Present)<br>
-								<em>Specialization: Robotics, Automation, Control Systems. Final year project: baseball pitching robot.</em><br>
-								<strong>Institute of Commercial Management (ICM), UK</strong> – Advanced Diploma in Project Management (2021)<br>
-								<strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
-								
-								<h3>🔧 Technical Skills</h3>
-								<p><strong>Programming & Simulation:</strong> Python, C++, Arduino, MATLAB, PLC (Ladder Logic), COMSOL, FlexSim<br>
-								<strong>Automation & Controls:</strong> PLCs, Sensors/Actuators, Servo Motors, HMI, Industrial IoT basics<br>
-								<strong>Engineering Design:</strong> AutoCAD, Fusion 360, Revit, ArchiCAD<br>
-								<strong>Project Management & QS:</strong> MS Project, Primavera, WinQS, Cost Estimation, Contract Administration (JBCC, NEC), Bill of Quantities</p>
-								
-								<h3>🌍 Languages & Citizenship</h3>
-								<p>English (Fluent) · Chinese (Basic – improving)<br>
-								Nationality: Eswatini · Currently based in Taiwan (valid student visa)</p>
-								
-								<h3>🌟 Beyond the classroom</h3>
-								<p>I’m passionate about mentoring emerging black professionals in the built environment and volunteering with Engineers Without Borders SA. In my downtime, I play football, and studying sustainable energy systems. I believe that diversity and knowledge-sharing uplift the entire industry, and I'm committed to being both a learner and a mentor as I start my career.</p>
-							</article>
-
-						<!-- Contact : real contact info from resume + working form simulation -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-									<p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">*I'm actively seeking graduate roles – feel free to reach out directly.</p>
-								</form>
-								<div style="text-align: center; margin-bottom: 1.5rem;">
-									<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br>
-									<span style="font-size: 0.85rem;">📍 Taiwan (available for relocation) · Nationality: Eswatini</span></p>
-								</div>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon solid fa-file-alt" target="_blank"><span class="label">Resume</span></a></li>
-								</ul>
-								<p style="font-size: 0.75rem; text-align: center; margin-top: 1rem;">Let's connect – whether for a full‑time role, mentorship, or collaboration at the intersection of mechanical engineering and cost management.</p>
-							</article>
-
-						<!-- Elements (kept for template completeness, not in main navigation) -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+						<div class="field">
+							<label>Upload Picture (image file)</label>
+							<input type="file" id="projImage" accept="image/*" />
+						</div>
+						<div class="field">
+							<label>Upload Project File (PDF, ZIP, DOCX, etc.)</label>
+							<input type="file" id="projFile" />
+						</div>
+						<button id="addProjectBtn" class="button primary" style="margin-top: 0.5rem;">Add Project</button>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Mechanical Engineering Graduate (soon) & Junior Quantity Surveyor. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<div id="projectsContainer" class="projects-grid">
+						<!-- Dynamic project cards will appear here -->
+					</div>
+					<p style="margin-top: 1rem; font-size: 0.8rem; text-align: center;">Projects are stored locally. To permanently keep them, download your data or keep this page.</p>
+				</article>
 
+				<!-- About -->
+				<article id="about">
+					<h2 class="major">About</h2>
+					<span class="image main"><img src="images/pic03.jpg" alt="Engineering sketches" /></span>
+					<h3>🎓 Education</h3>
+					<p><strong>Kun Shan University, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–2026)<br />
+					<strong>ICM, UK</strong> – Adv. Diploma in Project Management (2021)<br />
+					<strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
+					<h3>🔧 Technical Skills</h3>
+					<p>Python, C++, Arduino, MATLAB, PLC, AutoCAD, Revit, Fusion 360, WinQS, MS Project, etc.</p>
+					<h3>🌟 Beyond the classroom</h3>
+					<p>I'm passionate about mentoring emerging black professionals in the built environment and volunteering with Engineers Without Borders SA. In my downtime, I enjoy chess, cycling, and studying sustainable energy systems.</p>
+				</article>
+
+				<!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half"><label for="name">Name</label><input type="text" name="name" id="name" /></div>
+							<div class="field half"><label for="email">Email</label><input type="text" name="email" id="email" /></div>
+							<div class="field"><label for="message">Message</label><textarea name="message" id="message" rows="4"></textarea></div>
+						</div>
+						<ul class="actions"><li><input type="submit" value="Send Message" class="primary" /></li><li><input type="reset" value="Reset" /></li></ul>
+					</form>
+					<div style="text-align: center; margin-bottom: 1.5rem;">
+						<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br />
+						<span style="font-size: 0.85rem;">📍 Taiwan · Nationality: Eswatini</span></p>
+					</div>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</article>
+
+				<!-- Elements (hidden) -->
+				<article id="elements"><h2 class="major">Elements</h2>...</article>
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+			<footer id="footer">
+				<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div id="bg"></div>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Local storage logic for projects -->
+		<script>
+			// Load and render projects from localStorage
+			function loadProjects() {
+				const projects = JSON.parse(localStorage.getItem('userProjects') || '[]');
+				const container = document.getElementById('projectsContainer');
+				if (!container) return;
+				if (projects.length === 0) {
+					container.innerHTML = '<p style="grid-column:1/-1; text-align:center;">No projects yet. Use the form above to add your first project.</p>';
+					return;
+				}
+				container.innerHTML = '';
+				projects.forEach((proj, idx) => {
+					const card = document.createElement('div');
+					card.className = 'project-card';
+					// Image
+					const img = document.createElement('img');
+					img.src = proj.imageData || 'images/pic02.jpg'; // fallback
+					img.alt = proj.title;
+					// Title
+					const title = document.createElement('h4');
+					title.textContent = proj.title;
+					// Description
+					const desc = document.createElement('p');
+					desc.textContent = proj.description;
+					// File link
+					let fileLink = null;
+					if (proj.fileData && proj.fileName) {
+						fileLink = document.createElement('a');
+						fileLink.href = proj.fileData;
+						fileLink.download = proj.fileName;
+						fileLink.textContent = `📎 Download ${proj.fileName}`;
+						fileLink.className = 'file-link';
+						fileLink.target = '_blank';
+					}
+					// Delete button
+					const delBtn = document.createElement('button');
+					delBtn.textContent = 'Delete';
+					delBtn.className = 'delete-btn';
+					delBtn.onclick = () => {
+						projects.splice(idx, 1);
+						localStorage.setItem('userProjects', JSON.stringify(projects));
+						loadProjects();
+					};
+					card.appendChild(img);
+					card.appendChild(title);
+					card.appendChild(desc);
+					if (fileLink) card.appendChild(fileLink);
+					card.appendChild(delBtn);
+					container.appendChild(card);
+				});
+			}
+
+			// Add new project
+			document.getElementById('addProjectBtn')?.addEventListener('click', () => {
+				const title = document.getElementById('projTitle').value.trim();
+				const description = document.getElementById('projDesc').value.trim();
+				const imageFile = document.getElementById('projImage').files[0];
+				const projectFile = document.getElementById('projFile').files[0];
+
+				if (!title || !description) {
+					alert('Please enter a title and description.');
+					return;
+				}
+
+				const readerImage = new FileReader();
+				let imageData = null;
+				let fileData = null;
+				let fileName = null;
+
+				const processSave = () => {
+					const newProject = {
+						title: title,
+						description: description,
+						imageData: imageData,
+						fileData: fileData,
+						fileName: fileName,
+						date: new Date().toISOString()
+					};
+					const existing = JSON.parse(localStorage.getItem('userProjects') || '[]');
+					existing.push(newProject);
+					localStorage.setItem('userProjects', JSON.stringify(existing));
+					// Clear form
+					document.getElementById('projTitle').value = '';
+					document.getElementById('projDesc').value = '';
+					document.getElementById('projImage').value = '';
+					document.getElementById('projFile').value = '';
+					loadProjects();
+				};
+
+				let pending = 0;
+				function checkDone() {
+					pending--;
+					if (pending === 0) processSave();
+				}
+
+				if (imageFile) {
+					pending++;
+					readerImage.onload = (e) => {
+						imageData = e.target.result;
+						checkDone();
+					};
+					readerImage.readAsDataURL(imageFile);
+				} else {
+					imageData = null; // will use default later
+				}
+
+				if (projectFile) {
+					pending++;
+					const readerFile = new FileReader();
+					readerFile.onload = (e) => {
+						fileData = e.target.result;
+						fileName = projectFile.name;
+						checkDone();
+					};
+					readerFile.readAsDataURL(projectFile);
+				} else {
+					fileData = null;
+					fileName = null;
+				}
+
+				if (pending === 0) processSave();
+			});
+
+			// Initial load
+			loadProjects();
+		</script>
 	</body>
 </html>
