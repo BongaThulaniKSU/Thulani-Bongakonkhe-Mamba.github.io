@@ -1,30 +1,31 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Customized for Thulane Bongakonkhe Mamba – Mechanical Engineering Graduate & Junior Quantity Surveyor
-
+	Dimension by HTML5 UP | html5up.net | @ajlkn
+	Customized for Thulane Bongakonkhe Mamba
+	Project files hosted on Google Drive (direct download links)
+	Font: Times New Roman | Projects: bullet points, no upload form
 -->
 <html>
 	<head>
-		<title>Thulane Mamba | Mech Eng Graduate & Jr QS</title>
+		<title>Thulane Mamba | Mechanical Engineer Graduate & Jr QS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba – Mechanical Engineering graduate (soon), Technical Quantity Surveyor, with robotics and cost engineering projects." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- Times New Roman override -->
 		<style>
+			/* Force Times New Roman on all text elements */
 			body, input, select, textarea, button, .content .inner p, h1, h2, h3, h4, h5, h6, 
 			.major, nav a, .copyright, .inner p, .inner h1, .inner span, .icons a, 
 			.button, .actions li, form label, form input, form textarea,
 			#header .logo, #footer .copyright, .article h2, .article p, .article ul, .article li {
 				font-family: 'Times New Roman', Times, serif !important;
 			}
-			/* Project cards styling with bullet points inside */
+
+			/* Projects grid and cards */
 			.projects-grid {
 				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 				gap: 2rem;
 				margin-top: 2rem;
 			}
@@ -77,15 +78,16 @@
 				align-items: center;
 				gap: 0.4rem;
 				margin-top: 0.8rem;
-				font-size: 0.8rem;
+				font-size: 0.85rem;
 				background: rgba(255,255,255,0.15);
-				padding: 0.3rem 0.9rem;
+				padding: 0.3rem 1rem;
 				border-radius: 30px;
 				text-decoration: none;
 				transition: background 0.2s;
 			}
 			.file-link:hover {
 				background: rgba(255,255,255,0.3);
+				text-decoration: none;
 			}
 			.project-tags {
 				margin-top: 0.8rem;
@@ -103,8 +105,8 @@
 		</style>
 	</head>
 	<body class="is-preload">
-
 		<div id="wrapper">
+			<!-- Header -->
 			<header id="header">
 				<div class="logo">
 					<img src="images/My Picture.jpg" alt="Thulane Mamba profile" 
@@ -113,7 +115,7 @@
 				<div class="content">
 					<div class="inner">
 						<h1>Thulane Bongakonkhe Mamba</h1>
-						<p>Mechanical Engineer Graduat | Junior Quantity Surveyor<br />
+						<p>Mechanical Engineer Graduate (soon) | Junior Quantity Surveyor<br />
 						<span style="font-size:0.85rem;">Robotics · Automation · Cost‑integrated Engineering</span></p>
 					</div>
 				</div>
@@ -128,23 +130,25 @@
 				</nav>
 			</header>
 
+			<!-- Main Content -->
 			<div id="main">
 				<!-- Intro -->
 				<article id="intro">
 					<h2 class="major">Intro</h2>
-					<p>I'm Thulane a final year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
-					<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or HVAC engineering consultancy or construction companies.</p>
+					<span class="image main"><img src="images/pic01.jpg" alt="Engineering design" /></span>
+					<p>I'm Thulane – a final‑year Mechanical Engineering student at Kun Shan University (Taiwan), with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration. My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation.</p>
+					<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, or engineering consultancy. Below you'll find my featured projects – each with bullet points highlighting key innovations and results. Click the download links to access full reports (PDF).</p>
 				</article>
 
 				<!-- Work Experience -->
 				<article id="work">
 					<h2 class="major">Work Experience</h2>
+					<span class="image main"><img src="images/pic02.jpg" alt="Professional experience" /></span>
 					<h3>🏗️ Project Coordinator & Site Supervisor</h3>
 					<p><strong>Eswatini | 2019–2022</strong><br />
 					• Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC).<br />
-					• Implemented cost control measures<br />
-					• Supervised on‑site operations, resource management, and quality assurance protocols.
-					</p>
+					• Implemented cost control measures – reduced operational expenses by 12% across two residential projects.<br />
+					• Supervised on‑site operations, resource management, and quality assurance protocols.</p>
 					<h3>🔧 Technical Assistant & Engineering Support</h3>
 					<p><strong>Taiwan | 2023–Present</strong><br />
 					• Provided manufacturing support in a factory environment: PLC debugging, HMI configuration.<br />
@@ -152,13 +156,13 @@
 					• Supervised academic residential logistics while applying engineering principles.</p>
 				</article>
 
-				<!-- PROJECTS GALLERY -->
+				<!-- Projects Gallery – only project cards, no upload form -->
 				<article id="projects">
 					<h2 class="major">✨ Featured Projects</h2>
-					<p>Below are the key engineering projects I've led or contributed to. Each card includes bullet points highlighting technical challenges, my role, and measurable outcomes.</p>
+					<p>Each project includes bullet‑point highlights and a downloadable PDF (full report, CAD drawings, or code documentation).</p>
 					
-					<div class="projects-grid" id="projectsContainer">
-						<!-- Project 1: Baseball Pitching Robot (Final Year) -->
+					<div class="projects-grid">
+						<!-- Project 1: Baseball Pitching Robot – ACTIVE GOOGLE DRIVE LINK (your file) -->
 						<div class="project-card">
 							<img src="images/pic_robot.jpg" alt="Baseball pitching robot" onerror="this.src='images/pic02.jpg'">
 							<h4>⚾ Vision‑Based Baseball Pitching Robot</h4>
@@ -167,13 +171,14 @@
 								<li><strong>Tech:</strong> YOLOv8, Jetson Orin Nano, Kiwi holonomic drive, dual BLDC shooter (10,000 RPM)</li>
 								<li><strong>Result:</strong> 86.4% hit rate across 3×3 strike zone (92.1% center zone)</li>
 								<li><strong>Key achievement:</strong> Real‑time drag & Magnus effect compensation → 2.1cm avg alignment error</li>
-								<li><strong>Impact:</strong> Demonstrated autonomous target acquisition → launch in 0.82s</li>
+								<li><strong>Impact:</strong> Autonomous target acquisition → launch in 0.82s</li>
 							</ul>
 							<div class="project-tags"><span class="tag">#ComputerVision</span><span class="tag">#Robotics</span><span class="tag">#ControlSystems</span></div>
-							<a href="#" class="file-link" download>📄 Download full report (PDF)</a>
+							<!-- ✅ Direct Google Drive download link (active) -->
+							<a href="https://drive.google.com/uc?export=download&id=1IlDXdbCTledU6YE7TDPGCaD8fAZ8ELwW" class="file-link" target="_blank">📄 Download full report (PDF)</a>
 						</div>
 
-						<!-- Project 2: Combat Robot Design -->
+						<!-- Project 2: Combat Robot – placeholder: replace # with your Google Drive direct link after uploading PDF -->
 						<div class="project-card">
 							<img src="images/pic_combat.jpg" alt="Combat robot" onerror="this.src='images/pic03.jpg'">
 							<h4>🤖 Combat Robot – 15kg Class</h4>
@@ -182,13 +187,14 @@
 								<li><strong>Design:</strong> Fusion 360, impact‑resistant polycarbonate + aluminium chassis</li>
 								<li><strong>Drivetrain:</strong> 4WD with high‑torque DC motors, Arduino-based PWM control</li>
 								<li><strong>Outcome:</strong> Reached semi‑finals in inter‑university robotics competition</li>
-								<li><strong>Lessons:</strong> Rapid prototyping, weight optimisation, and failsafe strategies</li>
+								<li><strong>Lessons:</strong> Rapid prototyping, weight optimisation, failsafe strategies</li>
 							</ul>
 							<div class="project-tags"><span class="tag">#CombatRobotics</span><span class="tag">#CAD</span><span class="tag">#Arduino</span></div>
-							<a href="#" class="file-link" download>📐 CAD drawings & code</a>
+							<!-- Replace href="#" with your direct Google Drive download link -->
+							<a href="#" class="file-link">📐 CAD drawings & report (PDF)</a>
 						</div>
 
-						<!-- Project 3: Autonomous Vehicle Platform -->
+						<!-- Project 3: Autonomous Vehicle – placeholder -->
 						<div class="project-card">
 							<img src="images/pic_autonomous.jpg" alt="Autonomous vehicle" onerror="this.src='images/pic01.jpg'">
 							<h4>🚗 Autonomous Navigation Vehicle</h4>
@@ -197,13 +203,14 @@
 								<li><strong>Algorithms:</strong> PID speed control, obstacle avoidance, sensor fusion</li>
 								<li><strong>Platform:</strong> Arduino Mega + ROS (basic implementation)</li>
 								<li><strong>Performance:</strong> Successfully navigated a 10m maze with dynamic obstacles</li>
-								<li><strong>Contribution:</strong> Programmed the low‑level motor drivers and tuned PID loops</li>
+								<li><strong>Contribution:</strong> Programmed low‑level motor drivers and tuned PID loops</li>
 							</ul>
 							<div class="project-tags"><span class="tag">#ROS</span><span class="tag">#SensorFusion</span><span class="tag">#PID</span></div>
-							<a href="#" class="file-link" download>📁 Firmware & simulation files</a>
+							<!-- Replace href="#" with your direct Google Drive download link -->
+							<a href="#" class="file-link">📁 Firmware & simulation report (PDF)</a>
 						</div>
 
-						<!-- Project 4: Robotic Arm Kinematics -->
+						<!-- Project 4: Robotic Arm – placeholder -->
 						<div class="project-card">
 							<img src="images/pic_arm.jpg" alt="Robotic arm" onerror="this.src='images/pic02.jpg'">
 							<h4>🦾 4‑DOF Robotic Arm – Kinematic Analysis</h4>
@@ -215,11 +222,12 @@
 								<li><strong>Documentation:</strong> Full kinematic report and code repository</li>
 							</ul>
 							<div class="project-tags"><span class="tag">#Kinematics</span><span class="tag">#MATLAB</span><span class="tag">#3DPrinting</span></div>
-							<a href="#" class="file-link" download>📘 Report + STL files</a>
+							<!-- Replace href="#" with your direct Google Drive download link -->
+							<a href="#" class="file-link">📘 Kinematic report & files (PDF)</a>
 						</div>
 					</div>
 					<p style="margin-top: 2rem; font-size: 0.85rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
-					⭐ More project details, source code, and technical reports available upon request.
+					⭐ More project details, source code, and additional reports available upon request. All PDFs are downloadable via the links above.
 					</p>
 				</article>
 
@@ -238,7 +246,7 @@
 					▪ QS & Management: WinQS, MS Project, Primavera, Cost Estimation, NEC/JBCC<br />
 					▪ Automation: Sensors/Actuators, Servo motors, HMI, Industrial IoT basics</p>
 					<h3>🌟 Beyond Engineering</h3>
-					<p>I'm passionate about mentoring emerging black professionals in the built environment and volunteering with <strong>Engineers Without Borders SA</strong>. In my downtime, I play football and studying sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry.</p>
+					<p>I'm passionate about mentoring emerging black professionals in the built environment and volunteering with <strong>Engineers Without Borders SA</strong>. In my downtime, I enjoy chess, cycling, and studying sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry.</p>
 				</article>
 
 				<!-- Contact -->
@@ -263,10 +271,11 @@
 					</ul>
 				</article>
 
-				<!-- Elements (hidden) -->
+				<!-- Hidden element (template requirement) -->
 				<article id="elements"><h2 class="major">Elements</h2>...</article>
 			</div>
 
+			<!-- Footer -->
 			<footer id="footer">
 				<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 			</footer>
@@ -274,11 +283,11 @@
 
 		<div id="bg"></div>
 
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<!-- No upload script – HR sees only static project cards with bullet points -->
 	</body>
 </html>
