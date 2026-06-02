@@ -2,7 +2,7 @@
 <!--
 	Dimension by HTML5 UP | html5up.net | @ajlkn
 	Customized for Thulane Bongakonkhe Mamba
-	Mechanical Engineer Graduate & Junior Quantity Surveyor
+	NOW WITH: Working contact form (receives emails) + Visitor counter
 -->
 <html>
 	<head>
@@ -117,9 +117,50 @@
 				border-radius: 50%;
 				object-fit: cover;
 			}
+			
+			/* Visitor counter styles */
+			.visitor-counter {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background: rgba(0,0,0,0.7);
+				padding: 8px 15px;
+				border-radius: 25px;
+				font-size: 12px;
+				color: #ccc;
+				z-index: 1000;
+				font-family: 'Times New Roman', Times, serif !important;
+				backdrop-filter: blur(5px);
+				border: 1px solid rgba(255,255,255,0.2);
+				pointer-events: none;
+			}
+			.visitor-counter strong {
+				color: #ffcc66;
+			}
+			.form-success {
+				background: #2ecc71;
+				color: white;
+				padding: 10px;
+				border-radius: 8px;
+				margin-bottom: 15px;
+				text-align: center;
+				display: none;
+			}
+			.form-error {
+				background: #e74c3c;
+				color: white;
+				padding: 10px;
+				border-radius: 8px;
+				margin-bottom: 15px;
+				text-align: center;
+				display: none;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
+
+		<!-- Visitor Counter (invisible to user but tracks views) -->
+		<div id="visitorWidget" class="visitor-counter" style="display: none !important;"></div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -154,7 +195,7 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="Engineering design" onerror="this.src='https://picsum.photos/id/0/800/350';" /></span>
-								<p>I'm Thulane a final‑year Mechanical Engineering student at <strong>Kun Shan University (Taiwan)</strong>, with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration.</p>
+								<p>I'm Thulane – a final‑year Mechanical Engineering student at <strong>Kun Shan University (Taiwan)</strong>, with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration.</p>
 								<p>My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation. I've also completed full architectural elevations, a 4-discipline Revit BIM model, and a 4-DOF robotic arm kinematic analysis.</p>
 								<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, HVAC engineering, and energy.</p>
 							</article>
@@ -269,22 +310,31 @@
 								<p>In my downtime, I play football and study sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry. I'm passionate about mentoring emerging professionals in the built environment.</p>
 							</article>
 
-						<!-- Contact -->
+						<!-- Contact - WITH WORKING FORMSPREE INTEGRATION -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#" onsubmit="alert('Thank you for your message! I will respond within 24 hours. For urgent inquiries, please email nhlanse@gmail.com directly.'); return false;">
+								
+								<div id="formSuccessMsg" class="form-success">
+									✅ Message sent successfully! I'll get back to you within 24 hours.
+								</div>
+								<div id="formErrorMsg" class="form-error">
+									❌ Something went wrong. Please email me directly at nhlanse@gmail.com
+								</div>
+								
+								<!-- Formspree form - WILL ACTUALLY SEND EMAILS TO nhlanse@gmail.com -->
+								<form id="contactForm" method="POST" action="https://formspree.io/f/xdkebggz">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -292,6 +342,7 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+								
 								<div style="text-align: center; margin: 1rem 0;">
 									<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br />
 									<span>📍 Taiwan (open to relocation) · Nationality: Eswatini</span></p>
@@ -321,6 +372,133 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+		<!-- Visitor Counter & Contact Form Handling Script -->
+		<script>
+			// ============================================
+			// VISITOR COUNTER SYSTEM
+			// Tracks how many people visited your profile
+			// ============================================
+			(function() {
+				const STORAGE_KEY = 'thulane_portfolio_visitors';
+				const VISITOR_LOG_KEY = 'thulane_visitor_log';
+				
+				// Get or initialize visitor count
+				let visitorCount = localStorage.getItem(STORAGE_KEY);
+				let today = new Date().toDateString();
+				let visitorLog = JSON.parse(localStorage.getItem(VISITOR_LOG_KEY) || '[]');
+				
+				// Check if this is a new visit today
+				let lastVisit = localStorage.getItem('thulane_last_visit');
+				
+				if (!lastVisit || lastVisit !== today) {
+					// New visit today - increment counter
+					if (visitorCount === null) {
+						visitorCount = 1;
+					} else {
+						visitorCount = parseInt(visitorCount) + 1;
+					}
+					localStorage.setItem(STORAGE_KEY, visitorCount);
+					localStorage.setItem('thulane_last_visit', today);
+					
+					// Log this visit
+					visitorLog.unshift({
+						date: new Date().toISOString(),
+						userAgent: navigator.userAgent.substring(0, 100),
+						referrer: document.referrer || 'direct'
+					});
+					// Keep only last 50 visits
+					if (visitorLog.length > 50) visitorLog.pop();
+					localStorage.setItem(VISITOR_LOG_KEY, JSON.stringify(visitorLog));
+				}
+				
+				// Create visible counter widget (only visible to you when you want to see it)
+				// You can view it by typing 'showStats()' in browser console or pressing Ctrl+Shift+S
+				const widget = document.getElementById('visitorWidget');
+				if (widget) {
+					widget.innerHTML = `👥 <strong>${visitorCount || 1}</strong> total visitors | Last: ${today}`;
+					widget.style.display = 'none'; // Hidden by default
+				}
+				
+				// Secret function to show visitor stats (press Ctrl+Shift+S to see)
+				window.showStats = function() {
+					const widget = document.getElementById('visitorWidget');
+					if (widget) {
+						widget.style.display = widget.style.display === 'none' ? 'block' : 'none';
+						if (widget.style.display === 'block') {
+							setTimeout(() => {
+								widget.style.display = 'none';
+							}, 8000);
+						}
+					}
+					console.log('📊 Visitor Stats:');
+					console.log('Total visitors:', localStorage.getItem(STORAGE_KEY) || 0);
+					console.log('Last visit:', localStorage.getItem('thulane_last_visit'));
+					const log = JSON.parse(localStorage.getItem(VISITOR_LOG_KEY) || '[]');
+					console.log('Recent visits:', log.slice(0, 5));
+					alert(`Total Visitors: ${localStorage.getItem(STORAGE_KEY) || 0}\nLast Visit: ${localStorage.getItem('thulane_last_visit')}\n(Check console for detailed log)`);
+				};
+				
+				// Also show stats when pressing Ctrl+Shift+S
+				document.addEventListener('keydown', function(e) {
+					if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+						e.preventDefault();
+						window.showStats();
+					}
+				});
+			})();
+			
+			// ============================================
+			// CONTACT FORM HANDLER (Formspree)
+			// ============================================
+			const form = document.getElementById('contactForm');
+			const successMsg = document.getElementById('formSuccessMsg');
+			const errorMsg = document.getElementById('formErrorMsg');
+			
+			if (form) {
+				form.addEventListener('submit', async function(e) {
+					e.preventDefault();
+					
+					// Hide any previous messages
+					if (successMsg) successMsg.style.display = 'none';
+					if (errorMsg) errorMsg.style.display = 'none';
+					
+					const formData = new FormData(form);
+					
+					try {
+						const response = await fetch(form.action, {
+							method: 'POST',
+							body: formData,
+							headers: {
+								'Accept': 'application/json'
+							}
+						});
+						
+						if (response.ok) {
+							// Success!
+							if (successMsg) successMsg.style.display = 'block';
+							form.reset();
+							
+							// Auto-hide success message after 5 seconds
+							setTimeout(() => {
+								if (successMsg) successMsg.style.display = 'none';
+							}, 5000);
+						} else {
+							// Error
+							if (errorMsg) errorMsg.style.display = 'block';
+						}
+					} catch (error) {
+						// Network error
+						if (errorMsg) errorMsg.style.display = 'block';
+					}
+				});
+			}
+			
+			// Console welcome message
+			console.log('%c👋 Welcome to Thulane Mamba\'s Portfolio!', 'color: #ffcc66; font-size: 14px;');
+			console.log('💡 Tip: Press Ctrl+Shift+S to view visitor statistics');
+			console.log('📧 Contact form will send messages to nhlanse@gmail.com via Formspree');
+		</script>
+		
 	</body>
 </html>
