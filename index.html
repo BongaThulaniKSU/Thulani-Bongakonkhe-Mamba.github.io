@@ -1,34 +1,36 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP | html5up.net | @ajlkn
-	Customized for Thulane Bongakonkhe Mamba
-	NOW WITH: Working contact form (Formspree) + Visitor tracking
--->
 <html>
 	<head>
 		<title>Thulane Mamba | Mechanical Engineer & Junior Quantity Surveyor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Portfolio of Thulane Bongakonkhe Mamba – Mechanical Engineering graduate, Technical Quantity Surveyor." />
+		
+		<!-- Google Analytics -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QC4GNDFJ7C"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-QC4GNDFJ7C');
+		</script>
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Force Times New Roman on all text elements */
 			body, input, select, textarea, button, .content .inner p, h1, h2, h3, h4, h5, h6, 
 			.major, nav a, .copyright, .inner p, .inner h1, .inner span, .icons a, 
 			.button, .actions li, form label, form input, form textarea,
 			#header .logo, #footer .copyright, article h2, article p, article ul, article li {
 				font-family: 'Times New Roman', Times, serif !important;
 			}
-			
-			/* Projects grid and cards */
 			.projects-grid {
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 				gap: 1.5rem;
 				margin-top: 1.5rem;
 			}
-			
 			.project-card {
 				background: rgba(255,255,255,0.05);
 				border-radius: 8px;
@@ -36,13 +38,11 @@
 				transition: transform 0.2s ease, background 0.2s;
 				border: 1px solid rgba(255,255,255,0.1);
 			}
-			
 			.project-card:hover {
 				transform: translateY(-4px);
 				background: rgba(255,255,255,0.1);
 				border-color: rgba(255,255,255,0.25);
 			}
-			
 			.project-card img {
 				width: 100%;
 				height: 160px;
@@ -50,34 +50,29 @@
 				border-radius: 6px;
 				margin-bottom: 0.8rem;
 			}
-			
 			.project-card h4 {
 				margin: 0.5rem 0 0.75rem;
 				font-size: 1.2rem;
 				border-left: 3px solid #fff;
 				padding-left: 10px;
 			}
-			
 			.project-card .bullet-list {
 				margin: 0.75rem 0 0.5rem 1rem;
 				padding-left: 0;
 				list-style: none;
 			}
-			
 			.project-card .bullet-list li {
 				margin-bottom: 0.5rem;
 				font-size: 0.85rem;
 				position: relative;
 				padding-left: 1.2rem;
 			}
-			
 			.project-card .bullet-list li:before {
 				content: "▹";
 				position: absolute;
 				left: 0;
 				color: #ffcc66;
 			}
-			
 			.file-link {
 				display: inline-block;
 				margin-top: 0.8rem;
@@ -89,19 +84,16 @@
 				transition: background 0.2s;
 				color: #fff;
 			}
-			
 			.file-link:hover {
 				background: rgba(255,255,255,0.3);
 				text-decoration: none;
 			}
-			
 			.project-tags {
 				margin-top: 0.8rem;
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.4rem;
 			}
-			
 			.tag {
 				font-size: 0.65rem;
 				background: #2c3e66;
@@ -109,16 +101,12 @@
 				border-radius: 20px;
 				letter-spacing: 0.5px;
 			}
-			
-			/* Profile image styling */
 			.logo img {
 				width: 100%;
 				height: 100%;
 				border-radius: 50%;
 				object-fit: cover;
 			}
-			
-			/* Form success/error messages */
 			.form-message {
 				padding: 12px 16px;
 				border-radius: 8px;
@@ -137,244 +125,192 @@
 				color: white;
 				border-left: 4px solid #e74c3c;
 			}
-			.form-loading {
-				background: rgba(52, 152, 219, 0.9);
-				color: white;
-				border-left: 4px solid #3498db;
-			}
-			
-			/* Submit button loading state */
-			.submit-btn.loading {
-				opacity: 0.7;
-				cursor: not-allowed;
-			}
-			.submit-btn.loading:after {
-				content: " ...";
-				animation: dots 1s steps(5, end) infinite;
-			}
-			@keyframes dots {
-				0%, 20% { content: " ..."; }
-				40% { content: " ..."; }
-				60% { content: " ..."; }
-				80%, 100% { content: " ..."; }
-			}
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<header id="header">
+				<div class="logo">
+					<img src="images/My Picture.jpg" alt="Thulane Mamba" onerror="this.src='https://ui-avatars.com/api/?background=2c3e66&color=fff&name=TM&size=100';" />
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Thulane Bongakonkhe Mamba</h1>
+						<p>Mechanical Engineer Graduate | Junior Quantity Surveyor</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<img src="images/My Picture.jpg" alt="Thulane Mamba" onerror="this.src='https://ui-avatars.com/api/?background=2c3e66&color=fff&name=TM&size=100';" />
+			<div id="main">
+				<article id="intro">
+					<h2 class="major">Intro</h2>
+					<span class="image main"><img src="images/pic01.jpg" alt="Engineering design" onerror="this.src='https://picsum.photos/id/0/800/350';" /></span>
+					<p>I'm Thulane – a final‑year Mechanical Engineering student at <strong>Kun Shan University (Taiwan)</strong>, with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration.</p>
+					<p>My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation. I've also completed full architectural elevations, a 4-discipline Revit BIM model, and a 4-DOF robotic arm kinematic analysis.</p>
+					<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, HVAC engineering, and energy.</p>
+				</article>
+
+				<article id="work">
+					<h2 class="major">Work Experience</h2>
+					<span class="image main"><img src="images/pic02.jpg" alt="Professional experience" onerror="this.src='https://picsum.photos/id/20/800/350';" /></span>
+					<h3>🏗️ Project Coordinator & Site Supervisor</h3>
+					<p><strong>Eswatini | 2019–2022</strong><br />
+					• Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC).<br />
+					• Implemented cost control measures – reduced operational expenses across residential projects.<br />
+					• Supervised on‑site operations, resource management, and quality assurance protocols.</p>
+					<h3>🔧 Technical Assistant & Engineering Support</h3>
+					<p><strong>Taiwan | 2023–Present</strong><br />
+					• Gained practical experience in manufacturing environments through hands-on technical roles.<br />
+					• Developed leadership and administrative skills in academic residential management.<br />
+					</p>
+				</article>
+
+				<article id="projects">
+					<h2 class="major">Featured Projects</h2>
+					
+					<div class="projects-grid">
+						<div class="project-card">
+							<img src="images/Chasis.JPG" alt="Baseball pitching robot" onerror="this.src='https://picsum.photos/id/101/400/200';">
+							<h4>⚾ Vision‑Based Baseball Pitching Robot</h4>
+							<ul class="bullet-list">
+								<li><strong>Role:</strong> Lead mechanical & control integration (team of 3)</li>
+								<li><strong>Tech:</strong> YOLOv8, Jetson Orin Nano, Kiwi holonomic drive, dual BLDC shooter (10,000 RPM)</li>
+								<li><strong>Result:</strong> 86.4% hit rate across 3×3 strike zone (92.1% center zone)</li>
+								<li><strong>Key achievement:</strong> Real‑time drag & Magnus effect compensation → 2.1cm avg alignment error</li>
+								<li><strong>Impact:</strong> Autonomous target acquisition → launch in 0.82s</li>
+							</ul>
+							<div class="project-tags"><span class="tag">#ComputerVision</span><span class="tag">#Robotics</span><span class="tag">#ControlSystems</span></div>
+							<a href="https://drive.google.com/uc?export=download&id=1IlDXdbCTledU6YE7TDPGCaD8fAZ8ELwW" class="file-link" target="_blank">📄 Download full report (PDF)</a>
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Thulane Bongakonkhe Mamba</h1>
-								<p>Mechanical Engineer Graduate | Junior Quantity Surveyor<br />
-								</p>
+
+						<div class="project-card">
+							<img src="images/Drawings.JPG" alt="Architectural elevations" onerror="this.src='https://picsum.photos/id/104/400/200';">
+							<h4>🏛️ Architectural Elevation Design & Detailing</h4>
+							<ul class="bullet-list">
+								<li><strong>Role:</strong> Architectural Designer & Draftsman</li>
+								<li><strong>Scope:</strong> Complete building elevation development from concept to construction</li>
+								<li><strong>Deliverables:</strong> Front, rear, side elevations with detailed annotations</li>
+								<li><strong>Features:</strong> Façade treatments, window/door schedules, material specifications</li>
+								<li><strong>Standards:</strong> Compliance with building codes and architectural guidelines</li>
+								<li><strong>Outcome:</strong> Construction-ready elevation drawings with dimension accuracy</li>
+							</ul>
+							<div class="project-tags"><span class="tag">#Architectural</span><span class="tag">#Elevations</span><span class="tag">#CAD</span><span class="tag">#BuildingDesign</span></div>
+							<a href="#" class="file-link">📐 Download Elevation Drawings (PDF)</a>
+						</div>
+
+						<div class="project-card">
+							<img src="images/Portfolio 4.JPG" alt="Revit BIM model" onerror="this.src='https://picsum.photos/id/106/400/200';">
+							<h4>🏗️ Full Revit BIM Model - 4 Disciplines</h4>
+							<ul class="bullet-list">
+								<li><strong>Role:</strong> BIM Modeler & MEP Coordinator</li>
+								<li><strong>Software:</strong> Autodesk Revit (full project from scratch)</li>
+								<li><strong>Architectural:</strong> Complete building elevation modeling, walls, windows, doors, facades, material takeoffs</li>
+								<li><strong>Plumbing:</strong> Sanitary drainage, cold/hot water supply, vent pipes, fixture connections, slope calculations</li>
+								<li><strong>Electrical:</strong> Power outlets, lighting fixtures, panel schedules, conduit routing, cable tray systems</li>
+								<li><strong>Mechanical:</strong> HVAC ductwork, diffusers, mechanical equipment, air terminals, duct sizing</li>
+								<li><strong>Outcome:</strong> Fully coordinated 3D model, clash detection resolved, automated BOQ schedules, LOD 300 deliverables</li>
+							</ul>
+							<div class="project-tags"><span class="tag">#Revit</span><span class="tag">#BIM</span><span class="tag">#Architectural</span><span class="tag">#Plumbing</span><span class="tag">#Electrical</span><span class="tag">#Mechanical</span><span class="tag">#MEP</span><span class="tag">#ClashDetection</span></div>
+							<a href="#" class="file-link">📐 Download Revit Model Summary & Schedules (PDF)</a>
+						</div>
+
+						<div class="project-card">
+							<img src="images/robotic arm.JPG" alt="Robotic arm" onerror="this.src='https://picsum.photos/id/63/400/200';">
+							<h4>🦾 4‑DOF Robotic Arm – Kinematic Analysis</h4>
+							<ul class="bullet-list">
+								<li><strong>Analysis:</strong> Forward/inverse kinematics solved via MATLAB & Denavit‑Hartenberg</li>
+								<li><strong>Fabrication:</strong> 3D‑printed links + servo actuators (SG90 & MG995)</li>
+								<li><strong>Control:</strong> Python GUI for joint angle control and trajectory planning</li>
+								<li><strong>Result:</strong> Achieved 2mm repeatability at 30cm reach</li>
+								<li><strong>Documentation:</strong> Full kinematic report and code repository</li>
+							</ul>
+							<div class="project-tags"><span class="tag">#Kinematics</span><span class="tag">#MATLAB</span><span class="tag">#3DPrinting</span></div>
+							<a href="https://drive.google.com/file/d/1tcJsOzJqtUejQgd9nv1hTsGJv8PCxJvH/view?usp=drive_link" class="file-link" target="_blank">📄 Download full report (PDF)</a>
+						</div>
+					</div>
+				</article>
+
+				<article id="about">
+					<h2 class="major">About</h2>
+					<span class="image main"><img src="images/pic03.jpg" alt="Engineering sketches" onerror="this.src='https://picsum.photos/id/26/800/350';" /></span>
+					<h3>🎓 Education (Graduating Soon)</h3>
+					<p><strong>Kun Shan University of Technology, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–Present)<br />
+					<em>Specialization: Robotics, Automation, Control Systems</em><br />
+					<strong>Institute of Commercial Management (ICM), UK</strong> – Advanced Diploma in Project Management (2021)<br />
+					<strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
+					
+					<h3>🔧 Technical Skills Snapshot</h3>
+					<p>▪ Programming: Python, C++, Arduino, MATLAB, PLC Ladder Logic<br />
+					▪ Design & Simulation: AutoCAD, Fusion 360, Revit, COMSOL, FlexSim<br />
+					▪ QS & Management: WinQS, MS Project, Primavera, Cost Estimation, NEC/JBCC<br />
+					▪ Automation: Sensors/Actuators, Servo motors, HMI, Industrial IoT basics</p>
+					
+					<h3>🌟 Beyond Engineering</h3>
+					<p>In my downtime, I play football and study sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry. I'm passionate about mentoring emerging professionals in the built environment.</p>
+				</article>
+
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					
+					<div id="form-message" class="form-message"></div>
+					
+					<form id="contactForm" action="https://formspree.io/f/xvznpkzy" method="POST">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" required />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4" required></textarea>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="Engineering design" onerror="this.src='https://picsum.photos/id/0/800/350';" /></span>
-								<p>I'm Thulane – a final‑year Mechanical Engineering student at <strong>Kun Shan University (Taiwan)</strong>, with a strong background in Quantity Surveying and Project Management. I bridge the gap between technical design and cost‑effective execution: from CAD modelling and control systems to bill of quantities and contract administration.</p>
-								<p>My final‑year project, a <strong>vision‑based autonomous baseball pitching robot</strong>, demonstrates real‑time target detection, holonomic mobility, and projectile modelling with aerodynamic drag compensation. I've also completed full architectural elevations, a 4-discipline Revit BIM model, and a 4-DOF robotic arm kinematic analysis.</p>
-								<p>As I prepare to graduate, I'm seeking opportunities in smart manufacturing, industrial automation, HVAC engineering, and energy.</p>
-							</article>
-
-						<!-- Work Experience -->
-							<article id="work">
-								<h2 class="major">Work Experience</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="Professional experience" onerror="this.src='https://picsum.photos/id/20/800/350';" /></span>
-								<h3>🏗️ Project Coordinator & Site Supervisor</h3>
-								<p><strong>Eswatini | 2019–2022</strong><br />
-								• Managed full construction project lifecycle: cost estimation, procurement, contract administration (JBCC/NEC).<br />
-								• Implemented cost control measures – reduced operational expenses across residential projects.<br />
-								• Supervised on‑site operations, resource management, and quality assurance protocols.</p>
-								<h3>🔧 Technical Assistant & Engineering Support</h3>
-								<p><strong>Taiwan | 2023–Present</strong><br />
-								• Gained practical experience in manufacturing environments through hands-on technical roles.<br />
-								• Developed leadership and administrative skills in academic residential management.<br />
-								</p>
-							</article>
-
-						<!-- Projects Gallery -->
-							<article id="projects">
-								<h2 class="major">Featured Projects</h2>
-								
-								<div class="projects-grid">
-									<!-- Project 1: Baseball Pitching Robot -->
-									<div class="project-card">
-										<img src="images/Chasis.JPG" alt="Baseball pitching robot" onerror="this.src='https://picsum.photos/id/101/400/200';">
-										<h4>⚾ Vision‑Based Baseball Pitching Robot</h4>
-										<ul class="bullet-list">
-											<li><strong>Role:</strong> Lead mechanical & control integration (team of 3)</li>
-											<li><strong>Tech:</strong> YOLOv8, Jetson Orin Nano, Kiwi holonomic drive, dual BLDC shooter (10,000 RPM)</li>
-											<li><strong>Result:</strong> 86.4% hit rate across 3×3 strike zone (92.1% center zone)</li>
-											<li><strong>Key achievement:</strong> Real‑time drag & Magnus effect compensation → 2.1cm avg alignment error</li>
-											<li><strong>Impact:</strong> Autonomous target acquisition → launch in 0.82s</li>
-										</ul>
-										<div class="project-tags"><span class="tag">#ComputerVision</span><span class="tag">#Robotics</span><span class="tag">#ControlSystems</span></div>
-										<a href="https://drive.google.com/uc?export=download&id=1IlDXdbCTledU6YE7TDPGCaD8fAZ8ELwW" class="file-link" target="_blank">📄 Download full report (PDF)</a>
-									</div>
-
-									<!-- Project 2: Architectural Elevation Design -->
-									<div class="project-card">
-										<img src="images/Drawings.JPG" alt="Architectural elevations" onerror="this.src='https://picsum.photos/id/104/400/200';">
-										<h4>🏛️ Architectural Elevation Design & Detailing</h4>
-										<ul class="bullet-list">
-											<li><strong>Role:</strong> Architectural Designer & Draftsman</li>
-											<li><strong>Scope:</strong> Complete building elevation development from concept to construction</li>
-											<li><strong>Deliverables:</strong> Front, rear, side elevations with detailed annotations</li>
-											<li><strong>Features:</strong> Façade treatments, window/door schedules, material specifications</li>
-											<li><strong>Standards:</strong> Compliance with building codes and architectural guidelines</li>
-											<li><strong>Outcome:</strong> Construction-ready elevation drawings with dimension accuracy</li>
-										</ul>
-										<div class="project-tags"><span class="tag">#Architectural</span><span class="tag">#Elevations</span><span class="tag">#CAD</span><span class="tag">#BuildingDesign</span></div>
-										<a href="#" class="file-link">📐 Download Elevation Drawings (PDF)</a>
-									</div>
-
-									<!-- Project 3: Full Revit BIM Model - 4 Disciplines -->
-									<div class="project-card">
-										<img src="images/Portfolio 4.JPG" alt="Revit BIM model" onerror="this.src='https://picsum.photos/id/106/400/200';">
-										<h4>🏗️ Full Revit BIM Model (From Scratch) - 4 Disciplines</h4>
-										<ul class="bullet-list">
-											<li><strong>Role:</strong> BIM Modeler & MEP Coordinator</li>
-											<li><strong>Software:</strong> Autodesk Revit (full project from scratch)</li>
-											<li><strong>Architectural:</strong> Complete building elevation modeling, walls, windows, doors, facades, material takeoffs</li>
-											<li><strong>Plumbing:</strong> Sanitary drainage, cold/hot water supply, vent pipes, fixture connections, slope calculations</li>
-											<li><strong>Electrical:</strong> Power outlets, lighting fixtures, panel schedules, conduit routing, cable tray systems</li>
-											<li><strong>Mechanical:</strong> HVAC ductwork, diffusers, mechanical equipment, air terminals, duct sizing</li>
-											<li><strong>Outcome:</strong> Fully coordinated 3D model, clash detection resolved, automated BOQ schedules, LOD 300 deliverables</li>
-										</ul>
-										<div class="project-tags"><span class="tag">#Revit</span><span class="tag">#BIM</span><span class="tag">#Architectural</span><span class="tag">#Plumbing</span><span class="tag">#Electrical</span><span class="tag">#Mechanical</span><span class="tag">#MEP</span><span class="tag">#ClashDetection</span></div>
-										<a href="#" class="file-link">📐 Download Revit Model Summary & Schedules (PDF)</a>
-									</div>
-
-									<!-- Project 4: 4-DOF Robotic Arm -->
-									<div class="project-card">
-										<img src="images/robotic arm.JPG" alt="Robotic arm" onerror="this.src='https://picsum.photos/id/63/400/200';">
-										<h4>🦾 4‑DOF Robotic Arm – Kinematic Analysis</h4>
-										<ul class="bullet-list">
-											<li><strong>Analysis:</strong> Forward/inverse kinematics solved via MATLAB & Denavit‑Hartenberg</li>
-											<li><strong>Fabrication:</strong> 3D‑printed links + servo actuators (SG90 & MG995)</li>
-											<li><strong>Control:</strong> Python GUI for joint angle control and trajectory planning</li>
-											<li><strong>Result:</strong> Achieved 2mm repeatability at 30cm reach</li>
-											<li><strong>Documentation:</strong> Full kinematic report and code repository</li>
-										</ul>
-										<div class="project-tags"><span class="tag">#Kinematics</span><span class="tag">#MATLAB</span><span class="tag">#3DPrinting</span></div>
-										<a href="https://drive.google.com/file/d/1tcJsOzJqtUejQgd9nv1hTsGJv8PCxJvH/view?usp=drive_link" class="file-link" target="_blank">📄 Download full report (PDF)</a>
-									</div>
-								</div>
-								
-								<p style="margin-top: 1.5rem; font-size: 0.8rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
-								⭐ More project details, source code, and additional reports available upon request.
-								</p>
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="Engineering sketches" onerror="this.src='https://picsum.photos/id/26/800/350';" /></span>
-								<h3>🎓 Education (Graduating Soon)</h3>
-								<p><strong>Kun Shan University of Technology, Taiwan</strong> – B.Sc. Mechanical Engineering (2022–Present)<br />
-								<em>Specialization: Robotics, Automation, Control Systems</em><br />
-								<strong>Institute of Commercial Management (ICM), UK</strong> – Advanced Diploma in Project Management (2021)<br />
-								<strong>Eswatini College of Technology</strong> – Diploma in Quantity Surveying (2019)</p>
-								
-								<h3>🔧 Technical Skills Snapshot</h3>
-								<p>▪ Programming: Python, C++, Arduino, MATLAB, PLC Ladder Logic<br />
-								▪ Design & Simulation: AutoCAD, Fusion 360, Revit, COMSOL, FlexSim<br />
-								▪ QS & Management: WinQS, MS Project, Primavera, Cost Estimation, NEC/JBCC<br />
-								▪ Automation: Sensors/Actuators, Servo motors, HMI, Industrial IoT basics</p>
-								
-								<h3>🌟 Beyond Engineering</h3>
-								<p>In my downtime, I play football and study sustainable energy systems. I believe diversity and knowledge-sharing uplift the industry. I'm passionate about mentoring emerging professionals in the built environment.</p>
-							</article>
-
-						<!-- Contact - WORKING FORMSPREE FORM with YOUR endpoint -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								
-								<!-- Message container for form feedback -->
-								<div id="form-message" class="form-message"></div>
-								
-								<!-- Formspree form - WILL SEND EMAILS TO YOUR ACCOUNT -->
-								<form id="contactForm" action="https://formspree.io/f/xvznpkzy" method="POST">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="email" name="email" id="email" required />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4" required></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><button type="submit" id="submitBtn" class="button primary">Send Message</button></li>
-										<li><button type="reset" class="button">Reset</button></li>
-									</ul>
-								</form>
-								
-								<div style="text-align: center; margin: 1rem 0;">
-									<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br />
-									<span>📍 Taiwan (open to relocation) · Nationality: Eswatini</span></p>
-								</div>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:nhlanse@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
+						<ul class="actions">
+							<li><button type="submit" id="submitBtn" class="button primary">Send Message</button></li>
+							<li><button type="reset" class="button">Reset</button></li>
+						</ul>
+					</form>
+					
+					<div style="text-align: center; margin: 1rem 0;">
+						<p><strong>✉️ nhlanse@gmail.com</strong> &nbsp;|&nbsp; <strong>📞 +886‑979‑562‑036</strong><br />
+						<span>📍 Taiwan (open to relocation) · Nationality: Eswatini</span></p>
 					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design: <a href="https://html5up.net">HTML5 UP Dimension</a>.</p>
-					</footer>
-
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:nhlanse@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</article>
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+			<footer id="footer">
+				<p class="copyright">&copy; Thulane Bongakonkhe Mamba. Design: <a href="https://html5up.net">HTML5 UP Dimension</a>.</p>
+			</footer>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-		<!-- Contact Form Handling Script -->
+		<div id="bg"></div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
 		<script>
-			// ============================================
-			// CONTACT FORM HANDLER (Formspree)
-			// Using endpoint: https://formspree.io/f/xvznpkzy
-			// ============================================
 			const form = document.getElementById('contactForm');
 			const messageDiv = document.getElementById('form-message');
 			const submitBtn = document.getElementById('submitBtn');
@@ -383,8 +319,6 @@
 				messageDiv.className = `form-message form-${type}`;
 				messageDiv.textContent = text;
 				messageDiv.style.display = 'block';
-				
-				// Auto-hide success message after 5 seconds
 				if (type === 'success') {
 					setTimeout(() => {
 						messageDiv.style.display = 'none';
@@ -392,21 +326,12 @@
 				}
 			}
 			
-			function hideMessage() {
-				messageDiv.style.display = 'none';
-			}
-			
 			if (form) {
 				form.addEventListener('submit', async function(e) {
 					e.preventDefault();
-					
-					// Hide any previous message
-					hideMessage();
-					
-					// Show loading state
+					messageDiv.style.display = 'none';
 					submitBtn.disabled = true;
-					submitBtn.classList.add('loading');
-					submitBtn.textContent = 'Sending';
+					submitBtn.textContent = 'Sending...';
 					
 					const formData = new FormData(form);
 					
@@ -414,38 +339,23 @@
 						const response = await fetch(form.action, {
 							method: 'POST',
 							body: formData,
-							headers: {
-								'Accept': 'application/json'
-							}
+							headers: { 'Accept': 'application/json' }
 						});
 						
 						if (response.ok) {
-							// Success!
 							showMessage('success', '✅ Message sent successfully! I\'ll get back to you within 24 hours.');
 							form.reset();
 						} else {
-							// Error from server
-							const errorData = await response.json();
-							console.error('Form error:', errorData);
 							showMessage('error', '❌ Failed to send message. Please email me directly at nhlanse@gmail.com');
 						}
 					} catch (error) {
-						// Network error
-						console.error('Network error:', error);
 						showMessage('error', '❌ Connection error. Please email me directly at nhlanse@gmail.com');
 					} finally {
-						// Reset button state
 						submitBtn.disabled = false;
-						submitBtn.classList.remove('loading');
 						submitBtn.textContent = 'Send Message';
 					}
 				});
 			}
-			
-			// Console welcome message
-			console.log('%c👋 Welcome to Thulane Mamba\'s Portfolio!', 'color: #ffcc66; font-size: 14px;');
-			console.log('📧 Contact form is connected to Formspree and will send messages to your email');
 		</script>
-		
 	</body>
 </html>
